@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#111111"></rect><text x="100" y="112" font-size="64" font-family="sans-serif" fill="#faf9f7" text-anchor="middle">VS</text></svg></template>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<script async="" src="https://platform.twitter.com/widgets.js"></script>
+<style>
+  body { margin:0; background:#faf9f7; }
+  * { font-family:'Roboto', sans-serif; box-sizing:border-box; }
+  a { color:#333333; text-decoration:none; }
+  a:hover { color:#111111; }
+  ::selection { background:#111; color:#fff; }
+  @keyframes blinkCaret { 0%, 49% { opacity:1; } 50%, 100% { opacity:0; } }
+  @keyframes driftA { 0% { transform: translate(-6%,-4%) scale(1); } 50% { transform: translate(4%,6%) scale(1.15); } 100% { transform: translate(-6%,-4%) scale(1); } }
+  @keyframes driftB { 0% { transform: translate(5%,3%) scale(1.1); } 50% { transform: translate(-5%,-5%) scale(0.95); } 100% { transform: translate(5%,3%) scale(1.1); } }
+  @keyframes driftC { 0% { transform: translate(0%,6%) scale(0.9); } 50% { transform: translate(6%,-4%) scale(1.2); } 100% { transform: translate(0%,6%) scale(0.9); } }
+</style>
+</helmet>
+
+<div style="width:100%; background:#faf9f7; color:#111111;">
+
+  <nav style="position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; padding:32px 64px; background:rgba(250,249,247,0.9); backdrop-filter:blur(8px); border-bottom:1px solid #e8e5e0;">
+    <div style="font:400 16px/1 'Roboto', sans-serif; color:#111;">valentyn shumakher</div>
+    <div style="display:flex; gap:40px; font:400 16px/1 'Roboto', sans-serif;">
+      <a href="#work" style="color:#555;">work</a>
+      <a href="#stack" style="color:#555;">stack</a>
+      <a href="#contact" style="color:#555;">contact</a>
+    </div>
+  </nav>
+
+  <div style="position:relative; overflow:hidden; background:#faf9f7;">
+    <section style="position:relative; max-width:1000px; margin:0 auto; padding:90px 40px 140px;">
+      <div style="display:inline-block; background:#111; color:#fff; padding:10px 18px; font:500 18px/1 'Roboto Mono', monospace; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:28px;">DESIGNER TURNED {{ typedSuffix }}<span style="{{ caretStyle }}">|</span></div>
+      <h1 style="margin:0 0 40px; font:300 68px/1.2 'Roboto', sans-serif; letter-spacing:-0.01em; max-width:900px;">I taught myself generative AI to solve my design problems, then built a company around the solution</h1>
+      <div ref="{{ resizeBoxRef }}" style="{{ resizeBoxStyle }}">
+        <p style="margin:0; font:400 16px/1.5 'Roboto', sans-serif; color:#555; padding-right:44px; padding-bottom:32px; overflow:hidden; max-height:100%;">{{ resizeText }}</p>
+        <div onMouseDown="{{ startResize }}" style="position:absolute; right:0; bottom:0; width:26px; height:26px; cursor:nwse-resize; background:linear-gradient(135deg, transparent 50%, #111 50%); border-bottom-right-radius:4px;"></div>
+        <div style="position:absolute; right:8px; bottom:32px; font:400 12px/1 'Roboto', sans-serif; color:#555; pointer-events:none;">drag corner</div>
+      </div>
+    </section>
+  </div>
+
+  <section style="max-width:1000px; margin:0 auto; padding:0 40px 140px; border-top:1px solid #e8e5e0; padding-top:80px; display:grid; grid-template-columns:1fr 420px; gap:60px; align-items:start;">
+    <div>
+    <div style="font:500 15px/1 'Roboto Mono', monospace; color:#999; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:20px;">Background</div>
+    <p style="margin:0 0 14px; font:400 15px/1.55 'Roboto', sans-serif; max-width:760px; color:#555;">Ukrainian by birth, I studied multimedia design in Czechia under <a href="https://en.wikipedia.org/wiki/Ji%C5%99%C3%AD_Barta" style="color: rgb(17, 17, 17);">Jiří Barta</a> — photography, videography, digital design, 3D animation. This background shaped how I still approach my projects: AI is a craft accelerator that works only when paired with a real talent.</p>
+    <p style="margin:0 0 14px; font:400 15px/1.55 'Roboto', sans-serif; max-width:760px; color:#555;">I started using early Midjourney and Stable Diffusion models in 2022 to help with my own creative projects. By 2023 I'd learned ComfyUI and taught myself diffusion models' architectures at a level that let me build custom pipelines for small fashion brands and creative agencies.</p>
+    <p style="margin:0 0 14px; font:400 15px/1.55 'Roboto', sans-serif; max-width:760px; color:#555;">That work led to a custom LoRA training pipeline — my ticket into FashionLab, where I've spent the last two years building the product.</p>
+    <p style="margin:0; font:400 15px/1.55 'Roboto', sans-serif; max-width:760px; color:#555;">I brought that technology into FashionLab and joined as co-founder. First as product owner, then as CTO, building the platform with the 500 Global accelerator and two years of production work with fashion brands across Europe leading to the company's acquisition.</p>
+    </div>
+    <image-slot fit="contain" id="bg-portrait" shape="rounded" radius="4" placeholder="Portrait" style="width:100%; height:520px;"></image-slot>
+  </section>
+
+  <section id="work" style="max-width:1000px; margin:0 auto; padding:0 40px 100px;">
+    <div style="font:500 15px/1 'Roboto Mono', monospace; color:#999; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:60px; border-top:1px solid #e8e5e0; padding-top:80px;">Work</div>
+
+    <!-- SECTION 1 — Freelance -->
+    <div style="margin-bottom:24px; border-bottom:1px solid #e8e5e0;">
+      <div onClick="{{ toggle.s1 }}" style="display:flex; justify-content:space-between; align-items:center; cursor:pointer; padding-bottom:24px;">
+        <div>
+          <div style="font:500 15px/1 'Roboto Mono', monospace; color:#333333; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:12px;">2022–2023</div>
+          <h2 style="margin:0; font:700 36px/1.2 'Roboto', sans-serif;">01 — Freelance Creative Projects</h2>
+        </div>
+        <span style="{{ arrow.s1 }}">⌄</span>
+      </div>
+      <sc-if value="{{ open.s1 }}" hint-placeholder-val="{{ false }}">
+      <div style="padding-bottom:48px;">
+        <p style="margin:0 0 48px; font:400 22px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Early Midjourney and Stable Diffusion work for my own creative projects, then freelance work for small fashion brands and creative agencies once I'd learned ComfyUI — pioneered custom ai pipelines built one client at a time collecting insights</p>
+
+        <div style="margin-bottom:56px;">
+          <h3 style="margin:0 0 20px; font:700 30px/1.2 'Roboto', sans-serif;">US based E-Commerce Campaign</h3>
+          <p style="margin:0 0 32px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">One of the first real AI project: a campaign for a US-based Shopify e-commerce brand. the core challenge was accuracy — recreating each product's true color and textile texture rather than a generic AI approximation. End of 2022.</p>
+          <div style="position:relative;">
+            <div ref="{{ freelanceRef }}" style="display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; scroll-behavior:smooth;">
+              <image-slot fit="contain" id="sd-1" shape="rect" placeholder="Campaign output 1" style="flex:0 0 auto; width:380px; height:320px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="sd-2" shape="rect" placeholder="Campaign output 2" style="flex:0 0 auto; width:380px; height:320px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="sd-3" shape="rect" placeholder="Campaign output 3" style="flex:0 0 auto; width:380px; height:320px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="sd-4" shape="rect" placeholder="Campaign output 4" style="flex:0 0 auto; width:380px; height:320px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="sd-5" shape="rect" placeholder="Campaign output 5" style="flex:0 0 auto; width:380px; height:320px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+            </div>
+            <button onClick="{{ scrollFreelanceLeft }}" style="position:absolute; left:-24px; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); border:none; box-shadow:0 6px 20px rgba(0,0,0,0.1); cursor:pointer; font:400 20px/1 'Roboto', sans-serif; color:#111; transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;" style-hover="transform:translateY(-50%) scale(1.1); box-shadow:0 10px 28px rgba(0,0,0,0.16);">←</button>
+            <button onClick="{{ scrollFreelanceRight }}" style="position:absolute; right:-24px; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); border:none; box-shadow:0 6px 20px rgba(0,0,0,0.1); cursor:pointer; font:400 20px/1 'Roboto', sans-serif; color:#111; transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;" style-hover="transform:translateY(-50%) scale(1.1); box-shadow:0 10px 28px rgba(0,0,0,0.16);">→</button>
+          </div>
+        </div>
+
+        <div style="margin-bottom:56px;">
+          <h3 style="margin:0 0 20px; font:700 30px/1.2 'Roboto', sans-serif;">Video Experiments</h3>
+          <p style="margin:0 0 24px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Early AI video works showreel&nbsp; made using Stable Warp Fusion workflow, before purpose-built video models existed.</p>
+          <div style="position:relative; width:100%; padding-top:56.25%; background:#111; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08);">
+            <iframe src="https://www.youtube.com/embed/Cvd5T5H79yc" title="Early AI video experiments" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+
+        <div style="margin-bottom:56px;">
+          <h3 style="margin:0 0 20px; font:700 30px/1.2 'Roboto', sans-serif;">Chimi</h3>
+          <p style="margin:0 0 24px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Eyewear brand project, 2023. Flux LoRA training used to recreate the product faithfully across campaign imagery. the chellanage was to prove that Ai imagery can look visually appealing + introduce color variations of the same product without real samples.</p>
+          <div style="position:relative;">
+            <div ref="{{ chimiRef }}" style="display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; scroll-behavior:smooth;">
+              <image-slot fit="contain" id="freelance-1" shape="rect" placeholder="Chimi output 1" style="flex:0 0 auto; width:400px; height:340px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="freelance-2" shape="rect" placeholder="Chimi output 2" style="flex:0 0 auto; width:400px; height:340px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="freelance-3" shape="rect" placeholder="Chimi output 3" style="flex:0 0 auto; width:400px; height:340px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="freelance-4" shape="rect" placeholder="Chimi output 4" style="flex:0 0 auto; width:400px; height:340px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="freelance-5" shape="rect" placeholder="Chimi output 5" style="flex:0 0 auto; width:400px; height:340px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+            </div>
+            <button onClick="{{ scrollChimiLeft }}" style="position:absolute; left:-24px; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); border:none; box-shadow:0 6px 20px rgba(0,0,0,0.1); cursor:pointer; font:400 20px/1 'Roboto', sans-serif; color:#111; transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;" style-hover="transform:translateY(-50%) scale(1.1); box-shadow:0 10px 28px rgba(0,0,0,0.16);">←</button>
+            <button onClick="{{ scrollChimiRight }}" style="position:absolute; right:-24px; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); border:none; box-shadow:0 6px 20px rgba(0,0,0,0.1); cursor:pointer; font:400 20px/1 'Roboto', sans-serif; color:#111; transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;" style-hover="transform:translateY(-50%) scale(1.1); box-shadow:0 10px 28px rgba(0,0,0,0.16);">→</button>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin:0 0 20px; font:700 30px/1.2 'Roboto', sans-serif;">Conzuri</h3>
+          <p style="margin:0 0 24px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">AI ad-creation pipeline built for Conzuri — generative campaign assets produced from Iphone camera made product shots. 3 comfyui workflows: lora training+image generation&amp;editing</p>
+          <div style="position:relative;">
+            <div ref="{{ conzuriRef }}" style="display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; scroll-behavior:smooth;">
+              <image-slot fit="contain" id="conzuri-1" shape="rect" placeholder="Conzuri ad 1" style="flex:0 0 auto; width:400px; height:340px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="conzuri-2" shape="rect" placeholder="Conzuri ad 2" style="flex:0 0 auto; width:400px; height:340px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="conzuri-3" shape="rect" placeholder="Conzuri ad 3" style="flex:0 0 auto; width:400px; height:340px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+            </div>
+            <button onClick="{{ scrollConzuriLeft }}" style="position:absolute; left:-24px; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); border:none; box-shadow:0 6px 20px rgba(0,0,0,0.1); cursor:pointer; font:400 20px/1 'Roboto', sans-serif; color:#111; transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;" style-hover="transform:translateY(-50%) scale(1.1); box-shadow:0 10px 28px rgba(0,0,0,0.16);">←</button>
+            <button onClick="{{ scrollConzuriRight }}" style="position:absolute; right:-24px; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); border:none; box-shadow:0 6px 20px rgba(0,0,0,0.1); cursor:pointer; font:400 20px/1 'Roboto', sans-serif; color:#111; transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;" style-hover="transform:translateY(-50%) scale(1.1); box-shadow:0 10px 28px rgba(0,0,0,0.16);">→</button>
+          </div>
+        </div>
+      </div>
+      </sc-if>
+    </div>
+
+    <!-- SECTION 2 — FashionLab Year One -->
+    <div style="margin-bottom:24px; border-bottom:1px solid #e8e5e0;">
+      <div onClick="{{ toggle.s2 }}" style="display:flex; justify-content:space-between; align-items:center; cursor:pointer; padding-bottom:24px;">
+        <div>
+          <div style="font:500 15px/1 'Roboto Mono', monospace; color:#333333; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:12px;">Year One — 2024</div>
+          <h2 style="margin:0; font:700 36px/1.2 'Roboto', sans-serif;">02 — FashionLab: Finding Product-Market Fit</h2>
+        </div>
+        <span style="{{ arrow.s2 }}">⌄</span>
+      </div>
+      <sc-if value="{{ open.s2 }}" hint-placeholder-val="{{ false }}">
+      <div style="padding-bottom:48px;">
+        <p style="margin:0 0 48px; font:400 22px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Joined FashionLab bringing my own Flux LoRA training in scale technology. For the first year I worked as product owner and AI creative director under another CTO, running tests across different clients to understand where the technology could actually be useful for different brands and to collect data. All of these projects were run in-house on the tech I developed.</p>
+
+        <img src="uploads/IMG_8585.JPG" alt="FashionLab team backstage" style="width:100%; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.08); display:block; margin-bottom:56px;">
+
+        <div style="margin-bottom:56px;">
+          <h3 style="margin:0 0 20px; font:700 30px/1.2 'Roboto', sans-serif;">Bubbleroom</h3>
+          <p style="margin:0 0 16px; font:400 18px/1.5 'Roboto', sans-serif; color:#777;">Developed prior to the availability of image-editing models. The objective was to establish the limits of the technology at the time by combining multiple LoRAs within a single generation and evaluating this approach under real production conditions.</p>
+          <p style="margin:0 0 32px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Swedish fashion retailer. The workflow comprised per-garment and per-character Flux LoRA training, a custom ksampler designed to reduce cross-LoRA bleeding, inpainting for garment detailing, and batch upscaling of over 1,000 images to 4K resolution via a custom per-image prompt-generation engine. The ComfyUI face-swap and garment-inpainting workflows were developed independently to address the detail and fidelity limitations of the models available at the time.</p>
+          <p style="margin:0 0 20px; font:400 18px/1.5 'Roboto', sans-serif; color:#777;">ComfyUI inpainting workflow walkthrough, used to replace garments and refine details such as logos, pockets, buttons, zippers, and prints, as well as adjust fit using a reference photo.</p>
+          <div style="position:relative; width:100%; padding-top:56.25%; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); margin-bottom:32px;">
+            <iframe src="https://drive.google.com/file/d/1Va4rLtlKgqwZf5U0ZtF-Frrxd8HC_OYE/preview" title="Bubbleroom ComfyUI workflow" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="autoplay" allowfullscreen=""></iframe>
+          </div>
+          <div style="position:relative; margin-bottom:32px;">
+            <div ref="{{ bubbleroomRef }}" style="display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; scroll-behavior:smooth;">
+              <image-slot fit="contain" id="w1-a" shape="rect" placeholder="Output — real shoot vs. resized model" style="flex:0 0 auto; width:460px; height:380px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="w1-b" shape="rect" placeholder="Output — garment detail inpaint" style="flex:0 0 auto; width:460px; height:380px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="w1-c" shape="rect" placeholder="Output — additional example" style="flex:0 0 auto; width:460px; height:380px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+            </div>
+            <button onClick="{{ scrollBubbleroomLeft }}" style="position:absolute; left:-24px; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); border:none; box-shadow:0 6px 20px rgba(0,0,0,0.1); cursor:pointer; font:400 20px/1 'Roboto', sans-serif; color:#111; transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;" style-hover="transform:translateY(-50%) scale(1.1); box-shadow:0 10px 28px rgba(0,0,0,0.16);">←</button>
+            <button onClick="{{ scrollBubbleroomRight }}" style="position:absolute; right:-24px; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); border:none; box-shadow:0 6px 20px rgba(0,0,0,0.1); cursor:pointer; font:400 20px/1 'Roboto', sans-serif; color:#111; transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;" style-hover="transform:translateY(-50%) scale(1.1); box-shadow:0 10px 28px rgba(0,0,0,0.16);">→</button>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:32px;">
+            <image-slot fit="contain" id="w1-v1" shape="rect" placeholder="Vertical look 1" style="width:100%; aspect-ratio:3/4; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08);"></image-slot>
+            <image-slot fit="contain" id="w1-v2" shape="rect" placeholder="Vertical look 2" style="width:100%; aspect-ratio:3/4; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08);"></image-slot>
+            <image-slot fit="contain" id="w1-v3" shape="rect" placeholder="Vertical look 3" style="width:100%; aspect-ratio:3/4; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08);"></image-slot>
+            <image-slot fit="contain" id="w1-v4" shape="rect" placeholder="Vertical look 4" style="width:100%; aspect-ratio:3/4; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08);"></image-slot>
+          </div>
+          <div style="display:flex; gap:24px; margin-bottom:16px;">
+            <a href="https://www.breakit.se/artikel/43071/nystartade-fashionlabs-ai-modeller-ska-visa-klader-i-fler-storlekar-hos-bubbleroom" style="font:400 15px/1 'Roboto', sans-serif; border-bottom:1px solid #333333;">Breakit →</a>
+            <a href="https://www.habit.se/article/view/1159286/bubbleroom_tar_hjalp_av_ai" style="font:400 15px/1 'Roboto', sans-serif; border-bottom:1px solid #333333;">Habit →</a>
+          </div>
+          <p style="margin:0 0 32px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Business case: real shoots re-rendered onto models of varying sizes and ethnicities, enabling buyers to see themselves represented in the product.</p>
+          <div style="display:flex; gap:64px; flex-wrap:wrap;">
+            <div style="display:flex; align-items:center; gap:20px;">
+              <svg width="96" height="96" viewBox="0 0 36 36">
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e8e5e0" stroke-width="4"></circle>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="5 95" stroke-dashoffset="25" stroke-linecap="round" transform="rotate(-90 18 18)"></circle>
+              </svg>
+              <div>
+                <div style="font:700 30px/1 'Roboto', sans-serif; color:#111;">5%</div>
+                <div style="font:400 15px/1.4 'Roboto', sans-serif; color:#777; max-width:140px;">reduction in returns</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:20px;">
+              <svg width="96" height="96" viewBox="0 0 36 36">
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e8e5e0" stroke-width="4"></circle>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="4 96" stroke-dashoffset="25" stroke-linecap="round" transform="rotate(-90 18 18)"></circle>
+              </svg>
+              <div>
+                <div style="font:700 30px/1 'Roboto', sans-serif; color:#111;">4%</div>
+                <div style="font:400 15px/1.4 'Roboto', sans-serif; color:#777; max-width:140px;">increase in conversion</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom:56px;">
+          <h3 style="margin:0 0 20px; font:700 30px/1.2 'Roboto', sans-serif;">Fila SS26</h3>
+          <p style="margin:0 0 16px; font:400 18px/1.5 'Roboto', sans-serif; color:#777;">Built before any image-editing models existed. Where Bubbleroom combined multiple LoRAs, this project tested the opposite approach: injecting characters and garments as standalone tokens into one larger model, to see which strategy held up better in production.</p>
+          <p style="margin:0 0 32px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Dual role as AI tech lead and creative director. Designed 6 distinct AI characters trained into a single Flux checkpoint, generating 20+ looks across 60+ garments from the new collection — built and directed alongside Fila's marketing team lead, Peter Bader. Reused and adapted the Bubbleroom inpainting comfyui workflow for Fila's garment detailing.</p>
+          <div style="position:relative;">
+            <div ref="{{ filaRef }}" style="display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; scroll-behavior:smooth;">
+              <image-slot fit="contain" id="w2-node" shape="rect" placeholder="Fila character-injection node graph" style="flex:0 0 auto; width:540px; height:460px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="w2-a" shape="rect" placeholder="Fila SS26 look" style="flex:0 0 auto; width:440px; height:460px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="w2-b" shape="rect" placeholder="Fila SS26 look" style="flex:0 0 auto; width:440px; height:460px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="w2-c" shape="rect" placeholder="Fila SS26 look" style="flex:0 0 auto; width:440px; height:460px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="w2-d" shape="rect" placeholder="Fila SS26 look" style="flex:0 0 auto; width:440px; height:460px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+              <image-slot fit="contain" id="w2-e" shape="rect" placeholder="Fila SS26 look" style="flex:0 0 auto; width:440px; height:460px; scroll-snap-align:start; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);" data-autofit="true" style-hover="transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(0,0,0,0.14);"></image-slot>
+            </div>
+            <button onClick="{{ scrollFilaLeft }}" style="position:absolute; left:-24px; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); border:none; box-shadow:0 6px 20px rgba(0,0,0,0.1); cursor:pointer; font:400 20px/1 'Roboto', sans-serif; color:#111; transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;" style-hover="transform:translateY(-50%) scale(1.1); box-shadow:0 10px 28px rgba(0,0,0,0.16);">←</button>
+            <button onClick="{{ scrollFilaRight }}" style="position:absolute; right:-24px; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); border:none; box-shadow:0 6px 20px rgba(0,0,0,0.1); cursor:pointer; font:400 20px/1 'Roboto', sans-serif; color:#111; transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;" style-hover="transform:translateY(-50%) scale(1.1); box-shadow:0 10px 28px rgba(0,0,0,0.16);">→</button>
+          </div>
+        </div>
+
+        <div style="margin-bottom:56px;">
+          <h3 style="margin:0 0 12px; font:700 22px/1.2 'Roboto', sans-serif;">8848</h3>
+          <p style="margin:0 0 20px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Outdoor apparel brand. Same "sizing" use case as Bubbleroom, but the goal here was different: understanding the optimal UI we'd need for users to generate these images themselves, at scale. This is where our self-service platform's UI and UX started — I vibe-coded an MVP in Lovable that later became the FashionLab platform.</p>
+          <div style="display:flex; gap:24px; align-items:flex-start;">
+            <div style="flex:1;">
+              <div style="display:block; margin-bottom:12px; height:400px;">
+                
+              <img src="uploads/Screenshot 2026-08-02 at 18.18.57.png" alt="FashionLab Lovable MVP" style="width: 620px; height: 340px; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: block"></div>
+              <a href="https://lovable.dev/preview/tGbBfAGXx6X3gwz3ocdGkUzthxzjKJR3" style="font:400 15px/1 'Roboto', sans-serif; border-bottom:1px solid #333333;">Click to view Lovable project →</a>
+            </div>
+            <div style="position:relative; flex:0 0 auto; height:400px; aspect-ratio:1434/1920; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08);">
+              <iframe src="https://drive.google.com/file/d/1RrLHiFcJ2RXBjZewshFQhHK3ENALDfb_/preview" title="8848 output" style="position:absolute; top:0; left:0; width:100%; height:calc(100% + 100px); margin-top:-50px; border:0;" allow="autoplay" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin:0 0 12px; font:700 22px/1.2 'Roboto', sans-serif;">LabFresh</h3>
+          <p style="margin:0 0 16px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Innovative European fashion-tech brand — one of the first to test AI imagery and actually post it publicly in EU, back in early 2025. I designed custom characters in two sizes myself and generated the images by hand (still not self-service at this point). Challenge: accurate fit &amp; their innovative textile folding and light reflection. Result: the product sold out in a day, which hadn't happened to them before; reduced asset production time X5.&nbsp;</p>
+          <image-slot fit="contain" id="w-labfresh" shape="rect" placeholder="LabFresh output" style="width:100%; aspect-ratio:1920/1080;"></image-slot>
+        </div>
+      </div>
+      </sc-if>
+    </div>
+
+    <!-- SECTION 3 — FashionLab Year Two -->
+    <div style="margin-bottom:24px; border-bottom:1px solid #e8e5e0;">
+      <div onClick="{{ toggle.s3 }}" style="display:flex; justify-content:space-between; align-items:center; cursor:pointer; padding-bottom:24px;">
+        <div>
+          <div style="font:500 15px/1 'Roboto Mono', monospace; color:#333333; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:12px;">Year Two — 2025–2026</div>
+          <h2 style="margin:0; font:700 36px/1.2 'Roboto', sans-serif;">03 — FashionLab: Building the Platform</h2>
+        </div>
+        <span style="{{ arrow.s3 }}">⌄</span>
+      </div>
+      <sc-if value="{{ open.s3 }}" hint-placeholder-val="{{ false }}">
+      <div style="padding-bottom:48px;">
+        <p style="margin:0 0 48px; font:400 22px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">After a full year of testing and collecting feedback across client projects, I became CTO — built the product roadmap, built the MVP, and with that we joined the 500 Global accelerator. Over this period I personally sourced and hired 4 developers from Sweden, the US, and Georgia, and together we built the first version of the self-service platform in 2.5 months and launched in January 2026.</p>
+
+        <div style="margin-bottom:56px;">
+          <h3 style="margin:0 0 20px; font:700 30px/1.2 'Roboto', sans-serif;">500 Global Accelerator</h3>
+          <p style="margin:0; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">FashionLab was accepted into the 500 Global accelerator, validating the platform against a global cohort of investors and operators and sharpening the go-to-market that carried the product through to acquisition.</p>
+        </div>
+
+        <div style="margin-bottom:56px;">
+          <h3 style="margin:0 0 20px; font:700 30px/1.2 'Roboto', sans-serif;">Self-Service Platform Build</h3>
+          <p style="margin:0 0 24px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Built in ~3 months once the first image-editing models arrived — Flux Kontext, then Nano Banana, Seadream, Qwen — all still immature. The focus shifted to finding a UI that let brand teams generate, edit, review, comment, retouch, and approve fashion product images at scale — thousands per week. As a result we enrolled brands like Oriflame, Weekday and Marimekko along with many mid size EU brands.</p>
+          <div style="position:relative; width:100%; padding-top:56.25%; background:#111; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); margin-bottom:32px;">
+            <iframe src="https://www.youtube.com/embed/Ifyd4NhoCb8" title="Self-service platform walkthrough" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen=""></iframe>
+          </div>
+          <ul style="margin:0; padding-left:22px; display:flex; flex-direction:column; gap:14px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">
+            <li>Generating an image requires several passes and editing tools — we needed easy navigation and the infrastructure to support it.</li>
+            <li>To generate thousands of images, we needed a structured image manager with distinct stages.</li>
+            <li>Generation logic should mirror how brands already work: create looks and write a creative brief, land in a "raw" folder of generated images and videos, move winners to a "selected" folder, then retouch (built-in Photoshop-style tools) and give the team access to review, annotate, and comment.</li>
+            <li>Brands need full control over their visuals, so we traded some UI simplicity and activation time for more advanced tooling.</li>
+            <li>Marketplace: smaller brands don't yet have people who can generate images, and aren't ready to commit to hiring or learning AI tools — they need support. My idea was a marketplace, like Upwork or Fiverr, where the best AI creators could be hired by our brands. Brands get results faster and start trusting the tool, while we open up a new "creators" market that also buys our subscriptions.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom:56px;">
+          <h3 style="margin:0 0 20px; font:700 30px/1.2 'Roboto', sans-serif;">ComfyUI Workflows on Top of the Editing-Model APIs</h3>
+          <p style="margin:0 0 32px; font:400 20px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Two proprietary ComfyUI workflows were developed to operate on top of the third-party editing-model APIs, addressing their remaining limitations.</p>
+
+          <h4 style="margin:0 0 12px; font:700 22px/1.2 'Roboto', sans-serif;">Face Swap</h4>
+          <p style="margin:0 0 20px; font:400 18px/1.5 'Roboto', sans-serif; color:#777;">A custom face-swap workflow developed to preserve identity consistency across generations.</p>
+          <div style="position:relative; width:100%; padding-top:56.25%; background:#111; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); margin-bottom:40px;">
+            <iframe src="https://drive.google.com/file/d/1NZzv3eiQJFFjO1sLfonvecyFolfoVHnN/preview" title="Face swap workflow" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="autoplay" allowfullscreen=""></iframe>
+          </div>
+
+          <h4 style="margin:0 0 12px; font:700 22px/1.2 'Roboto', sans-serif;">Background Color Accuracy Corrector</h4>
+          <p style="margin:0; font:400 18px/1.5 'Roboto', sans-serif; color:#777;">This workflow evaluates whether a generated background meets a defined color accuracy standard and, when it does not, corrects hue and contrast accordingly. As this workflow constitutes FashionLab intellectual property transferred with the company's acquisition, further details cannot be disclosed.</p>
+        </div>
+
+
+      </div>
+      </sc-if>
+    </div>
+
+    <!-- SECTION 4 — Latest Experiments -->
+    <div style="margin-bottom:24px;">
+      <div onClick="{{ toggle.s4 }}" style="display:flex; justify-content:space-between; align-items:center; cursor:pointer; padding-bottom:24px;">
+        <div>
+          <div style="font:500 15px/1 'Roboto Mono', monospace; color:#333333; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:12px;">Ongoing</div>
+          <h2 style="margin:0; font:700 36px/1.2 'Roboto', sans-serif;">04 — Latest Experiments</h2>
+        </div>
+        <span style="{{ arrow.s4 }}">⌄</span>
+      </div>
+      <sc-if value="{{ open.s4 }}" hint-placeholder-val="{{ false }}">
+      <div style="padding-bottom:48px;">
+        <p style="margin:0 0 32px; font:400 22px/1.6 'Roboto', sans-serif; color:#555; max-width:760px;">Currently exploring AI video and splatting techniques, which can also be applied to product design and to new digital customer product experiences.</p>
+        <div style="display:flex; gap:24px; flex-wrap:wrap;">
+          <div style="width:440px; min-height:500px; border:2px dashed #ccc; border-radius:20px; display:flex; align-items:center; justify-content:center; padding:24px; box-sizing:border-box;">
+            <div style="width:100%;">
+              <blockquote class="twitter-tweet"><a href="https://x.com/valentynshum/status/2071638323626672448?s=20"></a></blockquote>
+            </div>
+          </div>
+          <div style="width:440px; min-height:500px; border:2px dashed #ccc; border-radius:20px; display:flex; align-items:center; justify-content:center; padding:24px; box-sizing:border-box;">
+            <div style="width:100%;">
+              <blockquote class="twitter-tweet"><a href="https://x.com/valentynshum/status/2066135916700197098?s=20"></a></blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section id="stack" style="max-width:1000px; margin:0 auto; padding:0 40px 140px; border-top:1px solid #e8e5e0; padding-top:80px;">
+    <div style="font:500 15px/1 'Roboto Mono', monospace; color:#999; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:40px;">Stack</div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:40px;">
+      <div><div style="font:700 20px/1 'Roboto', sans-serif; margin-bottom:12px;">Models</div><div style="font:400 18px/1.5 'Roboto', sans-serif; color:#777;">Flux, Stable Diffusion, Seedream, Qwen, Nano Banana, LTX-Video, vision models</div></div>
+      <div><div style="font:700 20px/1 'Roboto', sans-serif; margin-bottom:12px;">UI</div><div style="font:400 18px/1.5 'Roboto', sans-serif; color:#777;">Node-based and application-level interfaces built in React</div></div>
+      <div><div style="font:700 20px/1 'Roboto', sans-serif; margin-bottom:12px;">Backend</div><div style="font:400 18px/1.5 'Roboto', sans-serif; color:#777;">Python, TypeScript, microservice architecture, asynchronous processing, API design</div></div>
+      <div><div style="font:700 20px/1 'Roboto', sans-serif; margin-bottom:12px;">Team Leadership</div><div style="font:400 18px/1.5 'Roboto', sans-serif; color:#777;">Recruiting and managing a cross-functional engineering team</div></div>
+      <div><div style="font:700 20px/1 'Roboto', sans-serif; margin-bottom:12px;">Product Strategy</div><div style="font:400 18px/1.5 'Roboto', sans-serif; color:#777;">Roadmap ownership, prioritization, go-to-market</div></div>
+      <div><div style="font:700 20px/1 'Roboto', sans-serif; margin-bottom:12px;">Creator Network</div><div style="font:400 18px/1.5 'Roboto', sans-serif; color:#777;">Personal contact with over 30 AI creators, photographers, and fashion designers</div></div>
+    </div>
+  </section>
+
+  <section id="contact" style="max-width:1000px; margin:0 auto; padding:0 40px 160px; border-top:1px solid #e8e5e0; padding-top:80px;">
+    <div style="display:grid; grid-template-columns:340px 1fr; gap:80px; align-items:center;">
+      <image-slot fit="contain" id="contact-portrait" shape="rounded" radius="4" placeholder="Portrait" style="width:100%; height:420px;"></image-slot>
+      <div>
+        <p style="margin:0 0 12px; font:400 22px/1.6 'Roboto', sans-serif; color:#555;">valentynshumdesign@gmail.com</p>
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:24px 40px;">
+          <a href="https://www.linkedin.com/in/valentyn-shumakher/" style="font:500 18px/1 'Roboto', sans-serif; border-bottom:1px solid #333333;">LinkedIn →</a>
+          <a href="https://x.com/valentynshum" style="font:500 18px/1 'Roboto', sans-serif; border-bottom:1px solid #333333;">X →</a>
+          <a href="https://huggingface.co/Valentyn2011" style="font:500 18px/1 'Roboto', sans-serif; border-bottom:1px solid #333333;">Hugging Face →</a>
+          <a href="https://github.com/valikshum" style="font:500 18px/1 'Roboto', sans-serif; border-bottom:1px solid #333333;">GitHub →</a>
+          <a href="https://fashionlab.tech" style="font:500 18px/1 'Roboto', sans-serif; border-bottom:1px solid #333333;">FashionLab →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  resizeBoxRef = React.createRef();
+  state0 = null;
+  typeFull = 'AI TOOL BUILDER';
+  componentDidMount2() {}
+  bubbleroomRef = React.createRef();
+  filaRef = React.createRef();
+  acceleratorRef = React.createRef();
+  experimentsRef = React.createRef();
+  freelanceRef = React.createRef();
+  chimiRef = React.createRef();
+  conzuriRef = React.createRef();
+  state = { open: { s1: false, s2: true, s3: false, s4: false }, boxW: 520, boxH: 214.1, typedCount: 0 };
+  resizeTexts = [
+    "Self-taught AI builder turned CTO.",
+    "Started fine-tuning generative AI while freelancing, then built FashionLab's production AI tools.",
+    "Trained in multimedia design, I started fine-tuning generative AI while freelancing, then moved from producing content to building AI pipelines. That led me to FashionLab, building AI tools for fashion imagery.",
+    "Trained in multimedia design, I started fine-tuning generative AI to sharpen my own creative process while freelancing, then moved from producing content to building the AI pipelines behind it. That work led me to develop my own technology, which I brought into FashionLab, where I've spent the last two years building frontier AI tools for fashion image production before the acquisition.",
+  ];
+  startResize = (e) => {
+    e.preventDefault();
+    const startX = e.clientX, startY = e.clientY;
+    const startW = this.state.boxW, startH = this.state.boxH;
+    const ratio = 340 / 140;
+    const onMove = (ev) => {
+      const dx = ev.clientX - startX, dy = ev.clientY - startY;
+      const delta = (dx + dy * ratio) / 2;
+      const w = Math.max(220, Math.min(680, startW + delta));
+      const h = w / ratio;
+      this.setState({ boxW: w, boxH: h });
+    };
+    const onUp = () => {
+      window.removeEventListener('mousemove', onMove);
+      window.removeEventListener('mouseup', onUp);
+    };
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onUp);
+  };
+  scroll(ref, dir) {
+    const el = ref.current;
+    if (el) el.scrollBy({ left: dir * 460, behavior: 'smooth' });
+  }
+  fitSlot(slot) {
+    if (slot._autofitBound) return;
+    slot._autofitBound = true;
+    const wait = () => {
+      const img = slot.shadowRoot && slot.shadowRoot.querySelector('img[part="image"]');
+      if (!img) { requestAnimationFrame(wait); return; }
+      const apply = () => {
+        const iw = img.naturalWidth, ih = img.naturalHeight;
+        const h = slot.getBoundingClientRect().height || parseInt(slot.style.height) || 360;
+        if (iw && ih) slot.style.width = Math.round(h * iw / ih) + 'px';
+      };
+      if (img.complete && img.naturalWidth) apply();
+      img.addEventListener('load', apply);
+    };
+    wait();
+  }
+  scanAutofit() {
+    document.querySelectorAll('#work image-slot[data-autofit="true"]').forEach(s => this.fitSlot(s));
+  }
+  componentDidMount() {
+    let i = 0;
+    this._typeInterval = setInterval(() => {
+      i++;
+      this.setState({ typedCount: i });
+      if (i >= this.typeFull.length) clearInterval(this._typeInterval);
+    }, 55);
+    this.scanAutofit();
+    this._autofitObserver = new MutationObserver(() => this.scanAutofit());
+    const work = document.getElementById('work');
+    if (work) this._autofitObserver.observe(work, { childList: true, subtree: true });
+  }
+  componentWillUnmount() {
+    if (this._autofitObserver) this._autofitObserver.disconnect();
+    if (this._typeInterval) clearInterval(this._typeInterval);
+  }
+
+  toggle(key) {
+    this.setState(s => ({ open: { ...s.open, [key]: !s.open[key] } }));
+  }
+  renderVals() {
+    const keys = ['s1', 's2', 's3', 's4'];
+    const toggle = {}, arrow = {};
+    keys.forEach(k => {
+      toggle[k] = () => this.toggle(k);
+      arrow[k] = { transform: this.state.open[k] ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s', display: 'inline-block', fontSize: '30px', lineHeight: 1, color: '#999', fontFamily: 'Roboto, sans-serif' };
+    });
+    return {
+      bubbleroomRef: this.bubbleroomRef,
+      filaRef: this.filaRef,
+      acceleratorRef: this.acceleratorRef,
+      experimentsRef: this.experimentsRef,
+      freelanceRef: this.freelanceRef,
+      chimiRef: this.chimiRef,
+      conzuriRef: this.conzuriRef,
+      scrollBubbleroomLeft: () => this.scroll(this.bubbleroomRef, -1),
+      scrollBubbleroomRight: () => this.scroll(this.bubbleroomRef, 1),
+      scrollFilaLeft: () => this.scroll(this.filaRef, -1),
+      scrollFilaRight: () => this.scroll(this.filaRef, 1),
+      scrollAcceleratorLeft: () => this.scroll(this.acceleratorRef, -1),
+      scrollAcceleratorRight: () => this.scroll(this.acceleratorRef, 1),
+      scrollExperimentsLeft: () => this.scroll(this.experimentsRef, -1),
+      scrollExperimentsRight: () => this.scroll(this.experimentsRef, 1),
+      scrollFreelanceLeft: () => this.scroll(this.freelanceRef, -1),
+      scrollFreelanceRight: () => this.scroll(this.freelanceRef, 1),
+      scrollChimiLeft: () => this.scroll(this.chimiRef, -1),
+      scrollChimiRight: () => this.scroll(this.chimiRef, 1),
+      scrollConzuriLeft: () => this.scroll(this.conzuriRef, -1),
+      scrollConzuriRight: () => this.scroll(this.conzuriRef, 1),
+      open: this.state.open,
+      toggle,
+      arrow,
+      resizeBoxRef: this.resizeBoxRef,
+      startResize: this.startResize,
+      typedSuffix: this.typeFull.slice(0, this.state.typedCount),
+      caretStyle: { opacity: this.state.typedCount < this.typeFull.length ? 1 : 0, animation: 'blinkCaret 1s steps(1) infinite' },
+      resizeText: (() => {
+        const area = this.state.boxW * this.state.boxH;
+        if (area <= 380 * 156.5) return this.resizeTexts[0];
+        if (area < 480 * 198) return this.resizeTexts[1];
+        if (area < 580 * 239) return this.resizeTexts[2];
+        return this.resizeTexts[3];
+      })(),
+      resizeBoxStyle: {
+        position: 'relative',
+        width: this.state.boxW + 'px',
+        height: this.state.boxH + 'px',
+        background: '#faf9f7',
+        border: '7px dashed #111',
+        borderRadius: '4px',
+        padding: '24px 24px 20px',
+        overflow: 'hidden',
+        transition: 'box-shadow 0.2s',
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>
